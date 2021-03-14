@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">#todo</h1>
+      <div class="main__app">
+        <div class="app__menu">
+          <button class="app__menu--button" id="render__all__button">
+            All
+          </button>
+          <button class="app__menu--button" id="render__active__button">
+            Active
+          </button>
+          <button class="app__menu--button" id="render__completed__button">
+            Completed
+          </button>
+        </div>
+        <div class="app__form">
+          <input
+            class="app_form--input"
+            placeholder="add details"
+            type="text"
+            id="add_task_input"
+          />
+          <button class="app_form--button" id="add_task_button">Add</button>
+        </div>
+
+        <div class="app__tasks">
+          <ul class="app_tasks--list"></ul>
+        </div>
+        <button class="delete__all">Delete all</button>
+      </div>
+    </main>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
